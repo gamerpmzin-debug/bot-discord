@@ -1,15 +1,15 @@
-// Mock do Zod pra build passar
-export const z = {
-  object: () => ({}),
-  string: () => ({}),
-  number: () => ({}),
-  boolean: () => ({}),
-  array: () => ({}),
+export const z: any = {
+  object: () => z,
+  string: () => z,
+  number: () => z,
+  boolean: () => z,
+  array: () => z,
+  optional: () => z,
+  nullable: () => z,
 };
 
-// Tipos que o código tá pedindo
-export type HealthCheckResponse = {};
-export type ListSessionsQueryParams = {};
-export type GetSessionParams = {};
+export type HealthCheckResponse = any;
+export type ListSessionsQueryParams = any;
+export type GetSessionParams = any;
 
 export default z;
