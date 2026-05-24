@@ -11,6 +11,8 @@
     "rootDir": "src",
     "baseUrl": ".",
     "paths": {
+      "@workspace/db": ["./src/lib/db.ts"],
+      "@workspace/api-zod": ["./src/lib/api-zod.ts"],
       "@/lib/db": ["./src/lib/db.ts"],
       "@/lib/api-zod": ["./src/lib/api-zod.ts"]
     }
