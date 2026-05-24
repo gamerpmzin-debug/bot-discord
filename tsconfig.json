@@ -1,22 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
+    "module": "NodeNext", 
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
     "skipLibCheck": true,
-    "outDir": "dist",
-    "rootDir": "src",
-    "baseUrl": ".",
-    "paths": {
-      "@workspace/db": ["./src/lib/db.ts"],
-      "@workspace/api-zod": ["./src/lib/api-zod.ts"],
-      "@/lib/db": ["./src/lib/db.ts"],
-      "@/lib/api-zod": ["./src/lib/api-zod.ts"]
-    }
+    "outDir": "dist"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"]
 }
