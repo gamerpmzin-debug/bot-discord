@@ -1,2 +1,23 @@
-"@prisma/client": "^5.19.0",
-"prisma": "^5.19.0",
+{
+  "name": "bot-discord",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.19.0",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "pino": "^8.21.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.19.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}
